@@ -1,0 +1,59 @@
+.competition{
+    max-width: 1000px;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.competition__form{
+    margin-bottom: 40px;
+}
+
+.competition__list{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.competition__item{
+    border: 1px solid black;
+    padding: 20px;
+
+}
+
+.competition__way{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+
+}
+
+.competition__input{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(124, 122, 122);
+}
+
+button{
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.competition__time{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+@media only screen and (max-width:500px){
+    .competition__list{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+    }
+}
