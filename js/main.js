@@ -13,7 +13,6 @@ var speed_car=70;
 var speed_plane=800;
 
 
-
 elCompetitionForm.addEventListener('submit', function(evt){
 
     evt.preventDefault();
@@ -25,8 +24,9 @@ elCompetitionForm.addEventListener('submit', function(evt){
     function time(speed){
         var hour = Math.floor(acceptInput / speed);
         var daqiqa = Math.floor(((acceptInput / speed - hour)*60));
+        var secund =Math.floor(((acceptInput/speed)-hour)*60-daqiqa)*60;
         
-        return hour + ' soat ' + daqiqa + ' daqiqa';
+        return hour + ' soat ' + daqiqa + ' daqiqa' + secund + 'sekund';
     }
     
     elCompetitionTime1.textContent=time(speed_on_foot);
